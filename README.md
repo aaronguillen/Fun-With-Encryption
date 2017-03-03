@@ -10,6 +10,8 @@ The only algorithmic part I changed from the initial script is athe addition of 
 The brunt of the script is actually command line argument parsing and output stuff. The crypto stuff really only exists in
 the encryptString and decrypt functions. genKey and expKey count as well, I suppose.
 
+----------------------------------------------------
+
 Anyway, you can use it in the following ways:
 
 python funWithEncryption.py Any number of command line arguments here it doesn't matter
@@ -32,6 +34,8 @@ python funWithEncryption.py --file inputFileName.extension -o outputFileName.ext
 python funWithEncryption.py --file inputFileName.extension --output outputFileName.extension
 
 The above will take the contents of a specified file and encrypt them and put the encrypted hex in the specified file
+
+----------------------------------------------------
 
 The script funWithEncryption.py is written for Python 3.4.0 and was developed on a system with the following specs:
 Windows 10 64-bit
