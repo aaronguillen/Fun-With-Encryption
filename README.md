@@ -5,7 +5,7 @@ Alright, so I was trying to free up some space on my hard drive because it's get
 Anyway, it looked cool so I started messing around with it and that's where you get funWithEncryption.py
 I'll admit, I don't actually know which algorithm this is, though I highly doubt it's an original construction.
 
-The only algorithmic part I changed from the initial script is athe addition of an initialization vector into the algorithm. THe original script, it seemed had an IV hard set to 0.
+The only algorithmic part I changed from the initial script is athe addition of an initialization vector into the algorithm. The original script, it seemed had an IV hard set to 0.
 
 The brunt of the script is actually command line argument parsing and output stuff. The crypto stuff really only exists in
 the encryptString and decrypt functions. genKey and expKey count as well, I suppose.
