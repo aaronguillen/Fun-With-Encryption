@@ -3,7 +3,9 @@
 Alright, so I was trying to free up some space on my hard drive because it's getting a little full (has been for a while) and I found this mysterious old crypto script. Original file creation date was Sept. 19, 2014 so I must have been a junior in college when I wrote this. It was in C:\Python27 folder. C:\Python27\README.txt revealed to me that I must have coded it in Python 2.7.6
 
 Anyway, it looked cool so I started messing around with it and that's where you get funWithEncryption.py
-I'll admit, I don't actually know which algorithm this is, though I highly doubt it's an original construction
+I'll admit, I don't actually know which algorithm this is, though I highly doubt it's an original construction.
+
+The only algorithmic part I changed from the initial script is athe addition of an initialization vector into the algorithm. THe original script, it seemed had an IV hard set to 0.
 
 The brunt of the script is actually command line argument parsing and output stuff. The crypto stuff really only exists in
 the encryptString and decrypt functions. genKey and expKey count as well, I suppose.
@@ -31,5 +33,7 @@ python funWithEncryption.py --file inputFileName.extension --output outputFileNa
 
 The above will take the contents of a specified file and encrypt them and put the encrypted hex in the specified file
 
-The script funWithEncryption.py is written for Python 3.4.0 and was developed on Windows 10 with the following specs:
-
+The script funWithEncryption.py is written for Python 3.4.0 and was developed on a system with the following specs:
+Windows 10 64-bit
+Intel Core i7-3612QM CPU @ 2.10GHz
+8.00 GB RAM
